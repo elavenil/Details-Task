@@ -9,12 +9,12 @@ const EditItem = (props) => {
   const router = useRouter();
 
   // const [items, setItems] = useState(task.items);
-  const [resourceName, setresourceName] = useState("");
-  const [jobCode, setjobCode] = useState("");
-  const [taskDescription, settaskDescription] = useState("");
-  const [createdAt, setcreatedAt] = useState("");
-  const [createdEt, setcreatedEt] = useState("");
-  const [statusDetails, setstatusDetails] = useState("");
+  const [resourceName, setResourceName] = useState("");
+  const [jobCode, setJobCode] = useState("");
+  const [taskDescription, setTaskDescription] = useState("");
+  const [createdAt, setCreatedAt] = useState("");
+  const [createdEt, setCreatedEt] = useState("");
+  const [statusDetails, setStatusDetails] = useState("");
 
   
 
@@ -46,12 +46,12 @@ const EditItem = (props) => {
     }
   };
   useEffect(() => {
-    setresourceName(task.resourceName);
-    setjobCode(task.jobCode);
-    settaskDescription(task.settaskDescription);
-    setcreatedAt(task.createdAt);
-    setcreatedEt(task.createdEt);
-    setstatusDetails(task.statusDetails);
+    setResourceName(task.resourceName);
+    setJobCode(task.jobCode);
+    setTaskDescription(task.taskDescription);
+    setCreatedAt(task.createdAt);
+    setCreatedEt(task.createdEt);
+    setStatusDetails(task.statusDetails);
   }, [task]);
 
   return (
@@ -67,7 +67,7 @@ const EditItem = (props) => {
               <input
                 type="text"
                 value={resourceName}
-                onChange={(e) => setresourceName(e.target.value)}
+                onChange={(e) => setResourceName(e.target.value)}
               />
             </div>
 
@@ -76,7 +76,7 @@ const EditItem = (props) => {
               <input
                 type="text"
                 value={jobCode}
-                onChange={(e) => setjobCode(e.target.value)}
+                onChange={(e) => setJobCode(e.target.value)}
               />
             </div>
 
@@ -85,7 +85,7 @@ const EditItem = (props) => {
               <input
                 type="text"
                 value={taskDescription}
-                onChange={(e) => settaskDescription(e.target.value)}
+                onChange={(e) => setTaskDescription(e.target.value)}
               />
             </div>
 
@@ -95,7 +95,7 @@ const EditItem = (props) => {
                 <input
                   type="date"
                   value={createdAt}
-                  onChange={(e) => setcreatedAt(e.target.value)}
+                  onChange={(e) => setCreatedAt(e.target.value)}
                 />
               </div>
               <div className="inline__group">
@@ -103,7 +103,7 @@ const EditItem = (props) => {
                 <input
                   type="date"
                   value={createdEt}
-                  onChange={(e) => setcreatedEt(e.target.value)}
+                  onChange={(e) => setCreatedEt(e.target.value)}
                 />
               </div>
             </div>
@@ -113,7 +113,7 @@ const EditItem = (props) => {
                 <input
                 type="text"
                 value={statusDetails}
-                onChange={(e) => setstatusDetails(e.target.value)}
+                onChange={(e) => setStatusDetails(e.target.value)}
               />
               </div>
             </div>
